@@ -17,50 +17,21 @@ Results and Discussion
 Conclusion and Future Scope
 
 ## Methodology
-    Hyperlink Analysis Model
-    Dataset Overview
-    URLs labeled as benign or malicious, including attributes like URL length, domain age, and special character presence.
-    
-    Pre-processing
-    Cleaning: Remove duplicates.
-    Normalization: Standardize URLs.
-    Feature Extraction: URL length, subdomains, HTTPS presence.
-    Label Encoding: Numerical label conversion.
-    Model Training
-    Split data into training and testing sets, then train with algorithms like Random Forest and SVM. Perform hyperparameter tuning.
+### Hyperlink Analysis Model
+The dataset includes URLs labeled as benign or malicious, sourced from repositories tracking known safe and harmful sites, with attributes like URL length, domain age, and special character presence. The pre-processing involves cleaning the dataset by removing duplicates and irrelevant data, normalizing URLs to a standard format, extracting features such as URL length, subdomains, and HTTPS presence, and encoding labels into numerical format for model training. The dataset is split into training and testing sets. Machine learning algorithms like Random Forest and SVM are used to train the model, with hyperparameter tuning performed to optimize performance.
 
 ### Content Analysis Model
-Dataset Overview
-Textual content of websites labeled as benign or malicious.
+This dataset comprises the textual content of websites labeled as benign or malicious, sourced from various web crawlers and online databases. Pre-processing involves cleaning the text by removing HTML tags and scripts, tokenizing the text into words or tokens, vectorizing text into numerical vectors using techniques like TF-IDF or word embeddings, and encoding labels into numerical format. Models are trained on the pre-processed text data using algorithms like Naive Bayes and LSTM, with hyperparameter tuning conducted to enhance performance.
 
-Pre-processing
-Cleaning: Remove HTML tags and scripts.
-Tokenization: Split text into words.
-Vectorization: Convert text to numerical vectors using TF-IDF or embeddings.
-Label Encoding: Numerical label conversion.
-Model Training
-Train on pre-processed text data using algorithms like Naive Bayes and LSTM. Optimize with hyperparameter tuning.
+### Web Scraping
+File paths are encoded correctly to ensure consistency and accessibility during the scraping process. Utility functions are implemented to streamline various tasks involved in web scraping, making the process more efficient and manageable.
 
-Web Scraping
-Encoding File Paths
-Ensure file paths are correctly encoded for consistency.
+### Web Integration
+The user interface is designed and developed to provide an intuitive and user-friendly experience. Machine learning models are integrated with backend services to process and classify data effectively. The integration flow ensures seamless coordination between the frontend and backend, providing a smooth user experience.
 
-Utility Functions
-Implement utility functions to streamline the scraping process.
-
-Web Integration
-Frontend Development
-Design and develop the user interface.
-
-Backend Integration
-Integrate machine learning models with backend services.
-
-Integration Flow
-Coordinate frontend and backend for seamless user experience.
-
-Results and Discussion
+## Results and Discussion
 Evaluation of the Hyperlink Analysis Model
-Assess model performance using metrics like accuracy, precision, recall, and F1-score.
+The performance of the hyperlink analysis model is assessed using metrics such as accuracy, precision, recall, and F1-score, providing insights into its effectiveness in classifying URLs.
 
 Evaluation of the Content Analysis Model
-Evaluate content model with similar performance metrics, focusing on accuracy and text classification precision.
+The content analysis model is evaluated using similar performance metrics, focusing on accuracy and precision in text classification to determine its reliability and accuracy.
